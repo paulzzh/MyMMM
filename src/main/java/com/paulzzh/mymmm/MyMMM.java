@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
     name = "MyMMM",
     acceptedMinecraftVersions = "[1.7.10]",
     acceptableRemoteVersions = "*",
-    dependencies = " required-after:gtnhlib@[0.2.1,);",
+    dependencies = "required-after:gtnhlib@[0.2.1,)",
     guiFactory = "com.paulzzh.mymmm.config.MyMMMGuiConfigFactory"
 )
 public class MyMMM {

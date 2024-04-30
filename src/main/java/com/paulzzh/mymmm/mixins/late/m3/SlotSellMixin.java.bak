@@ -1,0 +1,14 @@
+package com.paulzzh.mymmm.mixins.late.m3;
+
+
+import net.minecraft.item.ItemStack;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Invoker;
+
+@Mixin(targets = "project.studio.manametalmod.inventory.SlotSell")
+public interface SlotSellMixin {
+    @Invoker(value = "cansell" , remap = false)
+    public static boolean invokeCansell(ItemStack item, int type) {
+        throw new AssertionError();
+    }
+}

@@ -28,7 +28,8 @@ public enum Mixins {
     MMM(new Builder("M3魔改").addTargetedMod(TargetedMod.MMM).setSide(Side.BOTH)
         .setPhase(Phase.LATE).addMixinClasses("m3.ClientProxyMixin", "m3.AuthorMixin", //标题 作者
             "m3.EventGUIMixin", "m3.GuiHUDMixin", //CD显示 SET
-            "m3.TileEntityAccessibleMixin", "m3.TileEntityStackLimitMixin" //魔力石柱可访问
+            "m3.TileEntityAccessibleMixin", "m3.TileEntityStackLimitMixin", //魔力石柱可访问
+            "m3.TileEntityManaPawnshopMixin", "m3.MessageManaPawnshopBuyMixin", "m3.BlockTileEntityManaPawnshopMixin" //出货箱自动化
             //"m3.BlockDirtGardenMixin"
             )
         .setApplyIf(() -> MyMMMConfig.m3)

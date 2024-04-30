@@ -45,13 +45,13 @@ public class EventGUIMixin {
             int lv = root.carrer.getSpellKey()[i] / 100;
             if (lv == 1 && root.carrer.getSpellLV_1()[data] > 0 && root.carrer.getSpellCD_LV1()[data] > 0) {
                 if (MyMMM.toggleSpellSET_1(data)) {
-                    MyMMM.getSpellSET_1_state()[data]=10;
+                    MyMMM.getSpellSET_1_state()[data] = 10;
                     player.addChatComponentMessage(new ChatComponentText("立即发动 一转技能: " + MMM.getTranslateText("Skill.name_" + data + "_" + CareerCore.getPlayerCarrer(root).toString() + "_1")));
                 }
             }
             if (lv == 2 && root.carrer.getSpellLV_2()[data] > 0 && root.carrer.getSpellCD_LV2()[data] > 0) {
                 if (MyMMM.toggleSpellSET_2(data)) {
-                    MyMMM.getSpellSET_2_state()[data]=10;
+                    MyMMM.getSpellSET_2_state()[data] = 10;
                     player.addChatComponentMessage(new ChatComponentText("立即发动 二转技能: " + MMM.getTranslateText("Skill.name_" + data + "_" + CareerCore.getPlayerCarrer(root).toString() + "_2")));
                 }
             }
